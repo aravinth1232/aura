@@ -182,9 +182,10 @@ const Gallery = () => {
           <div key={index} className="border flex flex-col p-4 gap-5 shadow-md rounded relative">
             {/* <img src={upload.url} alt={upload.fileName} className="w-full h-32 object-cover mb-2" /> */}
 
+            <a href={upload.url} target="_blank" rel="noopener noreferrer">
             <MdUploadFile size={48}
             className="self-center"
-            />
+            /></a>
             <p>{upload.fileName}</p>
             <button
               onClick={() => handleDelete(upload)}
